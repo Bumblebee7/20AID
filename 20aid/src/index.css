@@ -1,13 +1,49 @@
+body > #root > div {
+  height: 100vh;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  background-image: url(https://pixabay.com/get/g8b2fe506d3f11e957a0612bbad69abc05429d274dbbf6595b5df19e652254ed19d4b6945baa351fd2a724266d9ffd183.jpg);
+  background-size: cover;
+}
+
+#circle {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 5px solid #00000095;
+}
+
+footer {
+  display: flex;
+  align-self: flex-end;
+}
+
+.primary-color {
+  color: #00000095;
 }
